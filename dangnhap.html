@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dangnhap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
+    <title>Đăng Nhập</title>
+    <link rel="icon" href="ip14.webp">
+</head>
+<body>  
+    <h2>Sign in/up Form</h2>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Tạo Tài Khoản</h1>
+                <div class="social-container">
+                    <a href="https://www.facebook.com/" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.google.com/?hl=vi" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>hoặc sử dụng email của bạn để đăng ký</span>
+                <input type="text" placeholder="Tên" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Mật Khẩu" />
+                <button>Đăng Ký</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Đăng Nhập</h1>
+                <div class="social-container">
+                    <a href="https://www.facebook.com/" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.google.com/?hl=vi" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>hoặc sử dụng tài khoản của bạn</span>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <a href="#">Quên mật khẩu?</a>
+                <button>Đăng Nhập</button>
+                <a href="index.html" class="trangchu">Quay lại trang chủ</a>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Chào mừng trở lại!</h1>
+                    <p>Để giữ kết nối với chúng tôi, vui lòng đăng nhập bằng thông tin cá nhân của bạn</p>
+                    <button class="ghost" id="signIn">Đăng Nhập</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Chào Bạn!</h1>
+                    <p>Nhập thông tin cá nhân của bạn và bắt đầu hành trình với chúng tôi</p>
+                    <button class="ghost" id="signUp">Đăng Ký</button>
+                </div>
+            </div>
+        </div>
+    </div>
+       <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add('right-panel-active');
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove('right-panel-active');
+        });
+    </script>
+</body>
+</html>
+

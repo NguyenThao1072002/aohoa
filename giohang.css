@@ -1,0 +1,529 @@
+body{
+    background-color: #F0F0F0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*-----------nav----------*/
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.container1{
+    max-width: 600px;
+    margin: auto;
+}
+header{
+    background-color: #FFD500;
+    text-align: center;
+    height: 44px;
+}
+nav{
+    background-color: black;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li,a{
+    color: white;
+    font-size: 12px;
+}
+nav ul li:nth-child(2) a{
+    color: #FFD500;
+}
+nav ul li:nth-child(2) i{
+    color: #FFD500;
+    font-size: 15px;
+    margin-left: 6px;
+}
+nav ul li:nth-child(3) {
+    position: relative;
+}
+nav ul li:nth-child(3) input{
+    height: 40px;
+    width: 100%;
+    border: radius 5px;
+    border: none; 
+    padding-left: 6px;
+    outline: none;
+}
+nav ul li:nth-child(3) i{
+    position: absolute;
+    font-size: 20px;
+    right: 12px;
+    color: #333;
+    line-height: 40px;
+    cursor: pointer;
+}
+nav ul li:nth-child(4) button{
+    height: 40px;
+    padding: 0 12px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(70, 68, 68);
+    border-radius: 5px;
+    transform: all 0.5s ease;
+}
+nav ul li:nth-child(4) button i{
+    margin-right: 6px;
+}
+nav ul li:nth-child(4) button:hover{
+    background-color:  rgb(100, 97, 97);
+}
+/*--------menu----------*/
+.menu{
+    background-color: #FFD400;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+}
+.menu-container > ul > li{
+    padding: 12px 6px;
+    transition: all 0.3s ease;
+}
+.menu ul li a{
+    color: #333;
+    font-size: 16px;
+}
+.menu ul li a i{
+    margin-right: 6px;
+    font-size: 16px;
+}
+.menu ul li:hover{
+    background-color: whitesmoke;
+}
+/*------adress form------*/
+.adress-form{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0,0,0,0.5);
+    top: 0;
+    left: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+    display: none;
+    z-index: 999;
+}
+.adress-form-menu{
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    border-radius: 5px;
+}
+.adress-form-menu form{
+    padding: 12px 40px;
+}
+.adress-form-menu h2{
+    font-size: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.adress-form-menu h2 span{
+    display: block;
+    position: absolute;
+    height: 30px;
+    padding: 0 6px;
+    border: 1px solid #ddd ;
+    right: 12px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 30px;
+    color: #333;
+    border-radius: 5px;
+}
+.adress-form-menu form p{
+    font-size: 16px;
+}
+.adress-form-menu form input,select{
+    height: 45px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 6px;
+    border-radius: 5px;
+}
+.adress-form-menu form button{
+    margin-top: 20px;
+    height: 40px;
+    width: 80%;
+    cursor: pointer;
+    background-color: orange;
+    outline: none;
+    border: none;
+    color:#fff;
+    border-radius: 5px;
+}
+/*-----------submenu----------*/
+.menu-container ul li{
+    position: relative;
+}
+.submenu{
+    position: absolute;
+    background-color: #ddd;
+    width: 300px;
+    height: auto;
+    top: 100%;
+    left: 0;
+    padding: 12px;
+    background-color: whitesmoke;
+    display: none;
+    z-index: 10;
+}
+.submenu ul{
+    display: flex;
+    flex-direction: column;
+}
+.submenu ul li{
+    padding: 6px 0;
+}
+.submenu ul li:hover a{
+    color: #000000;
+    font-weight: bold;
+}
+.submenu ul li:hover{
+    background: none;
+}
+.menu-container ul li:hover .submenu{
+    display: block;
+}
+
+/*------footer------*/
+.menutong{
+   height: 200px;
+   background-color: white;
+   margin-top: 30px;
+   border-top: 1px solid #e0e0e0;
+}
+.menutong .container{
+    display: flex;
+}
+.menu1 ul{
+    margin-top: 20px ;
+}
+.menu1 li{
+    margin-bottom: 15px;
+}
+.menu1 li a{
+    color: #000000;
+    line-height: 21px;
+    font-size: 17px;
+}
+.menu2 ul{
+    margin-top: 20px ;
+}
+.menu2 li{
+    margin-bottom: 15px;
+}
+.menu2 li a{
+    color: #000000;
+    line-height: 21px;
+    font-size: 17px;
+}
+.menu2 li a{
+    color: #000000;
+}
+.menu3 ul{
+    margin-top: 20px ;
+}
+.menu3 li{
+    margin-bottom: 15px;
+}
+.menu3 li a{
+    color: #000000;
+    line-height: 21px;
+    font-size: 17px;
+}
+.menu3 li a{
+    color: #000000;
+}
+.menu1 li a:hover{
+    color:rgb(59, 59, 224);
+}
+.menu2 li a:hover{
+    color:rgb(59, 59, 224);
+}
+.menu4 ul{
+    margin-top: 20px ;
+    display: flex;
+}
+.menu4 li{
+    margin-bottom: 15px;
+    margin-left: 5px;
+}
+.menu4 li a{
+    color: #000000;
+    line-height: 21px;
+    font-size: 17px;
+}
+.menu4 li a{
+    color: #000000;
+}
+.menu1{
+    width: 24%;
+}
+.menu2{
+    width: 24%;
+}
+.menu3{
+    width: 24%;
+}
+.menu4{
+    width: 24%;
+
+}
+.headd{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.headd a p{
+    color: rgb(124, 124, 240);
+    font-size: 14px;
+}
+.name1{
+    height: 30px;
+    border: 1px solid white;
+    display: flex;
+    font-size: 18px;
+}
+.name1 i{ 
+    font-size: 10px;
+    padding-top: 5px;
+}
+.name1 span{
+    padding-top: 1px;
+}
+.name1 span{
+    color: rgb(124, 124, 240);
+}
+.headd{
+    display: flex;
+}
+/*------cart------*/
+.head1{
+    margin-top: 10px;
+}
+.head1 a{  
+    font-size: 14px;
+    color: #288ad6;
+}
+.head1 p{
+    float: right;
+}
+.main{
+    margin-top: 20px;
+    border: 1px solid red;
+    height: 300px;
+    list-style: none;
+    background-color: white;
+}
+.main1{
+    display: flex;
+    padding: 20px;
+}
+.main2{
+    display: flex;
+}
+#buy{
+    display: flex;
+}
+#buy button{
+    width: 32px;
+    height: 30px;
+    outline: none;
+    background-color: none;
+    border: 1px solid #ececec;
+    cursor: pointer;
+}
+#buy button :hover{
+    background-color:#ececec; ;
+}
+#buy #amount{
+    width: 35px;
+    text-align: center;
+    border: 1px solid #ececec;
+}
+.main3{
+    margin-top: 20px;
+    display: flex;
+}
+.main4{
+    margin-top: 20px;
+    display: flex;
+}
+.center1{
+    font-size: 15px;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    display: block;
+    line-height: 16px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    max-width: 550px;
+    background-color: #D0021C;
+    font-weight: bold; 
+    margin-left: 25px;
+}
+.center1 a{
+    align-items: center;
+}
+.menu-container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .menu-container > ul > li {
+    display: inline-block;
+    position: relative;
+  }
+  
+@media  (max-width: 768px){
+   header img{
+width: 390px;
+height: 44px;
+   }
+    nav ul {
+        flex-wrap: wrap;
+        }
+        
+        nav li {
+          flex-grow: unset;
+          width: 100%;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+        
+        nav a {
+          display: inline-block;
+          padding: 10px;
+        }
+        
+        .search-container {
+          width: 100%;
+          margin-top: 10px;
+        }
+        
+        .search-container input[type=text] {
+          width: calc(100% - 40px);
+        }
+        
+        .search-container button {
+          position: static;
+          margin-left: 5px;
+        }
+        
+        #adress-form {
+          display: none;
+        }
+        
+        .adress-form {
+          position: static;
+          width: 100%;
+          top: auto;
+          box-shadow: none;
+          background-color: transparent;
+        }
+        
+        .adress-form-menu {
+          padding: 10px;
+        }
+        
+        .adress-form-menu h2 {
+          font-size: 16px;
+        }        
+        .adress-form-menu select, .adress-form-menu input[type="text"] {
+          margin-bottom: 5px;
+        }
+        .menu-container > ul > li:hover > .submenu {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 200px;
+            background-color: #333;
+          }
+          .menu-container ul li {
+            margin-right: 0;
+            margin-bottom: 0;
+            width: 40px;
+          }
+          .container > div {
+              flex-wrap: wrap;
+            }
+            .menu1, .menu2, .menu3, .menu4 {
+              width: 100%;
+            }
+            .menu1 li:last-child,
+            .menu2 li:last-child,
+            .menu3 li:last-child,
+            .menu4 li:last-child {
+              margin-bottom: 0;
+            }
+            
+            .menutong ul li a {
+              text-align: center;
+            }
+            .container > div {
+              flex-wrap: wrap;
+            }
+            .menu1, .menu2, .menu3, .menu4 {
+              width: 100%;
+            }
+            .menu1 li:last-child,
+            .menu2 li:last-child,
+            .menu3 li:last-child,
+            .menu4 li:last-child {
+              margin-bottom: 0;
+            }
+            
+            .menutong ul li a {
+              text-align: center;
+            }
+            .main{
+                height: 400px;
+            }
+            .main1 img {
+                width: 50px;
+                height: 50px;
+                margin-right: 10px;
+              }
+              .main4 p span{
+                font-size: 12px;
+                margin-right: 100px;
+              }
+              .main2 button {
+                margin-right: 10px;
+                margin-left: 0;
+              }
+              .main2 input {
+                width: 30%;
+                margin-right: 30px;
+              }
+              .center1 {
+                font-size: 14px;
+                padding: 10px;
+              }
+}
